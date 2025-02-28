@@ -5,10 +5,13 @@ Creare una funzione per capire se la parola inserita è palindroma
 
 */
 
+// PRIMA SOLUZIONE
+
 // richiesta parola all'utente
 
+/*
 let parola= prompt("Inserisci una parola");
-
+*/
 
 /* 
 creo funzione che prenda i caratteri della parola inserita e li inserisca in un array,
@@ -16,6 +19,7 @@ utilizzando un for, in ordine inverso e con un if verifico che la parola inserit
 riscritta inversa
 */
 
+/*
 function seiPalindroma(parola) {
     let parolaInversa= [];
 
@@ -35,7 +39,20 @@ function seiPalindroma(parola) {
         alert("Non palindromo");
     }
 }
-
+*/
 //invoco la funzione
 
 seiPalindroma(parola);
+
+
+//SECONDA SOLUZIONE
+
+// richiesta parola all'utente
+
+let parola= prompt("Inserisci una parola");
+
+//creo funzione che concatena i caratteri in una stringa  e li controllo rispetto alla parola inserita
+
+
+// invoco la funzione
+
