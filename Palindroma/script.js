@@ -42,8 +42,9 @@ function seiPalindroma(parola) {
 */
 //invoco la funzione
 
+/*
 seiPalindroma(parola);
-
+*/
 
 //SECONDA SOLUZIONE
 
@@ -53,6 +54,24 @@ let parola= prompt("Inserisci una parola");
 
 //creo funzione che concatena i caratteri in una stringa  e li controllo rispetto alla parola inserita
 
+function seiPalindroma(parola) {
+
+    let parolaInvertita = "";
+    for (let i = parola.length - 1; i >= 0; i--) {
+        parolaInvertita += parola[i]; 
+    }
+
+    if(parola === parolaInvertita){
+
+        alert("palindromo");
+
+    } else {
+        
+        alert("Non palindromo");
+    }
+}
 
 // invoco la funzione
+
+seiPalindroma(parola);
 
