@@ -7,6 +7,7 @@ Creare una funzione per capire se la parola inserita è palindroma
 
 // richiesta parola all'utente
 
+let parola= prompt("Inserisci una parola");
 
 
 /* 
@@ -15,6 +16,26 @@ utilizzando un for, in ordine inverso e con un if verifico che la parola inserit
 riscritta inversa
 */
 
+function seiPalindroma(parola) {
+    let parolaInversa= [];
 
+    for(let i=parola.length -1 ; i>=0 ; i--){
+
+        parolaInversa.push(parola[i]);
+    }
+
+    let parolaInvertita = parolaInversa.join("");
+
+    if(parola === parolaInvertita){
+
+        alert("palindromo");
+
+    } else {
+
+        alert("Non palindromo");
+    }
+}
 
 //invoco la funzione
+
+seiPalindroma(parola);
